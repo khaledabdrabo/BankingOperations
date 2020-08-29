@@ -3,9 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7061329C-25BF-4487-904F-DADE1431B5B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra IOC", "Infra IOC", "{5A0FCE27-7A1B-4823-B26D-0CD204F78202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra Bus", "Infra Bus", "{E2501394-A9D4-4A74-964A-6D8FF1EFE5E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{B8C857F0-3759-4D8A-9598-2ECE770C3ACA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{9FD1C2A5-6063-4B41-A9D5-98728D73E995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingOperations.Domain.Core", "BankingOperations.Domain.Core\BankingOperations.Domain.Core.csproj", "{6AF20893-43CA-4B09-8F46-A9B80FC248A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingOperations.Infra.Ioc", "BankingOperations.Infra Ioc\BankingOperations.Infra.Ioc.csproj", "{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingOperations.Infra.Bus", "BankingOperations.Infra.Bus\BankingOperations.Infra.Bus.csproj", "{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AF20893-43CA-4B09-8F46-A9B80FC248A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF20893-43CA-4B09-8F46-A9B80FC248A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF20893-43CA-4B09-8F46-A9B80FC248A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF20893-43CA-4B09-8F46-A9B80FC248A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AF20893-43CA-4B09-8F46-A9B80FC248A8} = {7061329C-25BF-4487-904F-DADE1431B5B2}
+		{1710E8BD-6FC6-4BA1-BAFA-823DCBC63C42} = {5A0FCE27-7A1B-4823-B26D-0CD204F78202}
+		{AF5D8CA0-8B28-4F6B-9CC9-2D09BC987B08} = {E2501394-A9D4-4A74-964A-6D8FF1EFE5E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {610344A5-6EAE-466D-91E5-D256924A9F2C}
