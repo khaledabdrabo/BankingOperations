@@ -1,4 +1,5 @@
-﻿using BankingOperations.Domain.Core.Event;
+﻿
+using BankingOperations.Domain.Core.Event;
 using MediatR;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
